@@ -371,6 +371,15 @@ textarea {
   }
 }
 
+.privacy-section {
+  margin-top: 60px;
+}
+
+.privacy-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
 /* =========================
    Law Page
 ========================= */
