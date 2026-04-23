@@ -3,6 +3,6 @@ const nav = document.getElementById("nav");
 
 if (menuToggle && nav) {
   menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("open");
+    nav.classList.toggle("active");
   });
 }
