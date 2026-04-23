@@ -6,49 +6,93 @@
   <title>お問い合わせ | MY COMPANY</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">MY COMPANY</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く">☰</button>
-      <nav class="nav" id="nav">
-        <ul>
-          <li><a href="index.html">TOP</a></li>
-          <li><a href="company.html">会社概要</a></li>
-          <li><a href="crypto.html">Crypto実績</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
-          <li><a href="law.html">特商法表記</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body class="contact-page">
 
-  <main class="page-main">
-    <section class="page-hero">
-      <div class="container">
-        <h1>お問い合わせ</h1>
-        <p>Contact</p>
+<header class="law-header">
+  <div class="law-header-inner">
+    <button class="law-menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="law-nav" id="nav">
+      <ul>
+        <li><a href="index.html">TOP</a></li>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="crypto.html">Crypto実績</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="law.html">特商法表記</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="contact-main">
+  <div class="contact-container">
+
+    <p class="contact-lead">
+      ご質問やご相談などございましたら、下記のお問い合わせフォームよりご連絡ください。
+      担当が内容を確認次第、折り返しご連絡させていただきます。
+    </p>
+
+    <form class="contact-form">
+
+      <div class="form-group">
+        <label><span class="required">必須</span> 名前</label>
+        <input type="text">
       </div>
-    </section>
 
-    <section class="section">
-      <div class="container contact-box">
-        <p class="contact-text">
-          ご相談・ご質問がありましたら、下記メールアドレスまでご連絡ください。
+      <div class="form-group">
+        <label><span class="required">必須</span> メールアドレス</label>
+        <input type="email">
+      </div>
+
+      <div class="form-group">
+        <label><span class="required">必須</span> メールアドレス（確認用）</label>
+        <input type="email">
+      </div>
+
+      <div class="form-group">
+        <label>郵便番号</label>
+        <input type="text" class="half">
+      </div>
+
+      <div class="form-group">
+        <label>住所</label>
+        <input type="text">
+      </div>
+
+      <div class="form-group">
+        <label>電話番号</label>
+        <input type="text">
+      </div>
+
+      <div class="form-group">
+        <label><span class="required">必須</span> お問い合わせ内容</label>
+        <textarea rows="6"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label><span class="required">必須</span> 個人情報保護について</label>
+        <p class="privacy-text">
+          個人情報の取り扱いについて同意いただける場合はチェックを入れてください。
         </p>
-        <a href="mailto:sample@example.com" class="btn">メールで問い合わせる</a>
+        <label class="checkbox">
+          <input type="checkbox"> 同意しました
+        </label>
       </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© 2026 MY COMPANY. All Rights Reserved.</p>
-      <a href="index.html">PAGE TOP</a>
-    </div>
-  </footer>
+      <div class="form-submit">
+        <button type="submit">送信する</button>
+      </div>
 
-  <script src="js/main.js"></script>
+    </form>
+
+  </div>
+</main>
+
+<script src="js/main.js"></script>
 </body>
 </html>

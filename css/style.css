@@ -272,6 +272,106 @@ a {
 }
 
 /* =========================
+   Contact Page
+========================= */
+
+.contact-page {
+  background: #f3f3f3;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-lead {
+  font-size: 22px;
+  line-height: 1.9;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.form-group label {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.required {
+  background: #8f2b2b;
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 14px;
+  margin-right: 8px;
+  border-radius: 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #eaeaea;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.half {
+  width: 40%;
+}
+
+.privacy-text {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.form-submit {
+  margin-top: 40px;
+}
+
+.form-submit button {
+  width: 100%;
+  padding: 20px;
+  font-size: 22px;
+  background: #8f2b2b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contact-lead {
+    font-size: 18px;
+  }
+
+  .form-group label {
+    font-size: 18px;
+  }
+
+  input,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+/* =========================
    Law Page
 ========================= */
 
