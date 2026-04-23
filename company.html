@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>会社概要 | MY COMPANY</title>
+  <title>会社概要 | INFINITY</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">MY COMPANY</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く">☰</button>
-      <nav class="nav" id="nav">
+<body class="company-page">
+
+  <header class="law-header">
+    <div class="law-header-inner">
+      <button class="law-menu-toggle" id="menuToggle" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="law-nav" id="nav">
         <ul>
           <li><a href="index.html">TOP</a></li>
           <li><a href="company.html">会社概要</a></li>
@@ -24,34 +29,64 @@
     </div>
   </header>
 
-  <main class="page-main">
-    <section class="page-hero">
-      <div class="container">
-        <h1>会社概要</h1>
-        <p>Company Profile</p>
-      </div>
-    </section>
+  <main class="company-main">
+    <div class="company-container">
 
-    <section class="section">
-      <div class="container">
-        <table class="info-table">
-          <tr><th>会社名</th><td>MY COMPANY株式会社</td></tr>
-          <tr><th>代表者</th><td>山田 太郎</td></tr>
-          <tr><th>所在地</th><td>〒000-0000 東京都〇〇区〇〇1-2-3</td></tr>
-          <tr><th>設立</th><td>2026年1月</td></tr>
-          <tr><th>事業内容</th><td>Web事業 / 情報発信事業 / 資産運用関連事業</td></tr>
-          <tr><th>メールアドレス</th><td>sample@example.com</td></tr>
-        </table>
-      </div>
-    </section>
-  </main>
+      <section class="company-section">
+        <div class="company-section-line"></div>
+        <h1 class="company-en-title">代表挨拶</h1>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© 2026 MY COMPANY. All Rights Reserved.</p>
-      <a href="index.html">PAGE TOP</a>
+　　　　<div class="message-image">
+ 　　　　　 <img src="images/message.jpg" alt="代表写真">
+　　　　</div>
+
+        <div class="company-message-block">
+          <h2 class="company-message-title">
+            誰もが安心して豊かに暮らせ<br>
+            る社会を目指す。
+          </h2>
+
+          <div class="company-message-text">
+            <p>
+              株式会社インフィニティでは、誰もが安心して豊かに暮らせる社会を目指しています。
+            </p>
+            <p>
+              関わる全ての人に感謝を忘れず、感謝の気持ちを循環していく社会。
+            </p>
+            <p>
+              私たちはそんな社会を創造するため、日々最高のサービスを提供し続けていきます。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="company-section company-profile-section">
+        <div class="company-section-line"></div>
+        <h2 class="company-en-title">Profile</h2>
+
+        <div class="company-profile-table">
+          <div class="company-row">
+            <div class="company-label">会社名</div>
+            <div class="company-value">株式会社　INFINITY</div>
+          </div>
+
+          <div class="company-row">
+            <div class="company-label">所在地</div>
+            <div class="company-value">
+              〒151-0066<br>
+              東京都渋谷区西原2-29-5 SNハウス109
+            </div>
+          </div>
+
+          <div class="company-row">
+            <div class="company-label">代表取締役</div>
+            <div class="company-value">杉政 直樹</div>
+          </div>
+        </div>
+      </section>
+
     </div>
-  </footer>
+  </main>
 
   <script src="js/main.js"></script>
 </body>

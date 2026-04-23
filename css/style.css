@@ -272,6 +272,109 @@ a {
 }
 
 /* =========================
+   Company Page
+========================= */
+
+.company-page {
+  background: #efefef;
+  color: #333;
+}
+
+.company-main {
+  padding: 20px 0 80px;
+}
+
+.company-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.company-section {
+  margin-bottom: 80px;
+}
+
+.company-section-line {
+  border-top: 2px solid #4a4a4a;
+  margin-bottom: 28px;
+}
+
+.company-en-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 110px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  margin-bottom: 90px;
+  color: #2f2f2f;
+}
+
+.company-message-block {
+  padding: 0;
+}
+
+.company-message-title {
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  margin-bottom: 110px;
+  color: #2f2f2f;
+}
+
+.company-message-text {
+  max-width: 980px;
+}
+
+.company-message-text p {
+  font-size: 28px;
+  line-height: 2;
+  margin-bottom: 12px;
+  color: #3a3a3a;
+}
+
+.company-profile-section .company-en-title {
+  margin-bottom: 60px;
+}
+
+.company-profile-table {
+  border-top: 2px solid #8a8a8a;
+}
+
+.company-row {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  padding: 54px 0;
+  border-bottom: 2px solid #8a8a8a;
+}
+
+.company-label {
+  font-size: 30px;
+  line-height: 1.8;
+  color: #3a3a3a;
+  padding-left: 70px;
+}
+
+.company-value {
+  font-size: 30px;
+  line-height: 1.9;
+  color: #3a3a3a;
+  padding-right: 20px;
+  word-break: break
+
+.message-image {
+  margin-top: 40px;
+}
+
+.message-image img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+}
+
+
+/* =========================
    Contact Page
 ========================= */
 
