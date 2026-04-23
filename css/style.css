@@ -795,3 +795,134 @@ textarea {
     max-width: 100%;
   }
 }
+
+/* =========================
+   Carypto Page
+========================= */
+
+.carypto-page {
+  background: #efefef;
+  color: #222;
+}
+
+.carypto-main {
+  padding: 20px 0 80px;
+}
+
+.carypto-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.carypto-month {
+  margin-bottom: 90px;
+}
+
+.carypto-month-title {
+  font-size: 62px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 44px;
+  color: #111;
+}
+
+.carypto-slider {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  padding: 8px 4px 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carypto-slider::-webkit-scrollbar {
+  height: 10px;
+}
+
+.carypto-slider::-webkit-scrollbar-track {
+  background: #dcdcdc;
+  border-radius: 999px;
+}
+
+.carypto-slider::-webkit-scrollbar-thumb {
+  background: #a8a8a8;
+  border-radius: 999px;
+}
+
+.carypto-card {
+  flex: 0 0 calc((100% - 28px * 4) / 5);
+  min-width: 200px;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.carypto-card img {
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto 18px;
+}
+
+.carypto-rate {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+.carypto-type {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  word-break: break-word;
+}
+
+@media (max-width: 1100px) {
+  .carypto-card {
+    flex: 0 0 240px;
+  }
+
+  .carypto-month-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carypto-container {
+    padding: 0 16px;
+  }
+
+  .carypto-month {
+    margin-bottom: 60px;
+  }
+
+  .carypto-month-title {
+    font-size: 34px;
+    margin-bottom: 28px;
+    line-height: 1.4;
+  }
+
+  .carypto-slider {
+    gap: 18px;
+    padding-bottom: 14px;
+  }
+
+  .carypto-card {
+    flex: 0 0 220px;
+    min-width: 220px;
+  }
+
+  .carypto-card img {
+    max-width: 180px;
+    margin-bottom: 14px;
+  }
+
+  .carypto-rate {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .carypto-type {
+    font-size: 20px;
+  }
+}
