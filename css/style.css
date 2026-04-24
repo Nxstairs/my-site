@@ -1015,3 +1015,19 @@ textarea {
   margin: 10px 0;
   text-align: left;
 }
+
+/* =========================
+   ƒƒS
+========================= */
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* ƒwƒbƒ_[‰¡•À‚Ñ’²® */
+.law-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
