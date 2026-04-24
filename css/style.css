@@ -1,3 +1,7 @@
+/* =========================
+   Reset
+========================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -21,11 +25,9 @@ a {
   text-decoration: none;
 }
 
-button,
-input,
-textarea {
-  font: inherit;
-}
+/* =========================
+   Layout
+========================= */
 
 .container {
   width: min(1100px, 90%);
@@ -33,7 +35,7 @@ textarea {
 }
 
 /* =========================
-   Common Header / Nav
+   Header
 ========================= */
 
 .header {
@@ -49,12 +51,13 @@ textarea {
   align-items: center;
   justify-content: space-between;
   height: 72px;
+  width: min(1100px, 90%);
+  margin: 0 auto;
 }
 
 .logo {
   font-weight: bold;
   font-size: 20px;
-  letter-spacing: 0.08em;
 }
 
 .nav ul {
@@ -68,875 +71,21 @@ textarea {
   font-weight: bold;
 }
 
-.menu-toggle {
-  display: none;
-  border: none;
-  background: none;
-  font-size: 28px;
-  cursor: pointer;
+.nav a:hover {
+  color: #00cfff;
 }
 
 /* =========================
-   Default Pages
+   TOPページ
 ========================= */
 
-.hero {
-  padding: 80px 0;
-  background: #f7f9fc;
-}
-
-.hero-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.hero-sub {
-  color: #2f6fed;
-  font-weight: bold;
-  margin-bottom: 16px;
-}
-
-.hero h1 {
-  font-size: 48px;
-  line-height: 1.3;
-  margin-bottom: 20px;
-}
-
-.hero-desc {
-  margin-bottom: 24px;
-  color: #555;
-}
-
-.btn {
-  display: inline-block;
-  background: #2f6fed;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 999px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-}
-
-.section {
-  padding: 80px 0;
-}
-
-.section-label {
-  color: #2f6fed;
-  font-weight: bold;
-  margin-bottom: 12px;
-}
-
-.section-title {
-  font-size: 32px;
-  margin-bottom: 24px;
-}
-
-.center {
-  text-align: center;
-}
-
-.narrow {
-  max-width: 760px;
-  margin: 0 auto 32px;
-}
-
-.page-main {
-  min-height: 70vh;
-}
-
-.page-hero {
-  padding: 80px 0 40px;
-  background: #f7f9fc;
-  text-align: center;
-}
-
-.page-hero h1 {
-  font-size: 40px;
-  margin-bottom: 8px;
-}
-
-.service-grid,
-.top-links {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 32px;
-}
-
-.card {
-  background: #fff;
-  border: 1px solid #e8e8e8;
-  border-radius: 16px;
-  padding: 28px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-}
-
-.link-card {
-  transition: 0.2s ease;
-}
-
-.link-card:hover {
-  transform: translateY(-4px);
-}
-
-.info-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #fff;
-}
-
-.info-table th,
-.info-table td {
-  border: 1px solid #ddd;
-  padding: 16px;
-  text-align: left;
-  vertical-align: top;
-}
-
-.info-table th {
-  width: 220px;
-  background: #f8f8f8;
-}
-
-.news-list {
-  display: grid;
-  gap: 24px;
-}
-
-.news-item {
-  padding: 24px;
-  border: 1px solid #e5e5e5;
-  border-radius: 16px;
-  background: #fff;
-}
-
-.news-date {
-  color: #2f6fed;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.contact-box {
-  text-align: center;
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.contact-text {
-  margin-bottom: 24px;
-}
-
-.footer {
-  border-top: 1px solid #e5e5e5;
-  padding: 24px 0;
-  margin-top: 40px;
-  background: #fff;
-}
-
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-/* =========================
-   Law / Gray Theme Shared Header
-========================= */
-
-.law-page,
-.contact-page,
-.company-page {
-  background: #efefef;
-  color: #333;
-}
-
-.law-header {
-  position: relative;
-  background: transparent;
-}
-
-.law-header-inner {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 10px 24px 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.law-menu-toggle {
-  border: none;
-  background: transparent;
-  width: 48px;
-  height: 48px;
-  padding: 0;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 7px;
-}
-
-.law-menu-toggle span {
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: #8d8d8d;
-}
-
-.law-nav {
-  display: none;
-  position: absolute;
-  top: 70px;
-  right: 24px;
-  width: 280px;
-  background: #fff;
-  border: 1px solid #d8d8d8;
-  padding: 16px;
-  z-index: 200;
-  border-radius: 8px;
-}
-
-.law-nav.active {
-  display: block;
-}
-
-.law-nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.law-nav a {
-  color: #333;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-/* =========================
-   Law Page
-========================= */
-
-.law-main {
-  padding: 10px 0 80px;
-}
-
-.law-container {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-.law-title {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1.4;
-  margin: 24px 0 56px;
-  color: #333;
-}
-
-.law-block {
-  margin-bottom: 44px;
-}
-
-.law-label {
-  background: #efefef;
-  border-top: 1px solid #cfcfcf;
-  border-bottom: 1px solid #cfcfcf;
-  text-align: center;
-  font-size: 28px;
-  color: #444;
-  padding: 42px 20px;
-  margin-bottom: 28px;
-}
-
-.law-value {
-  font-size: 28px;
-  line-height: 1.9;
-  color: #333;
-  padding: 0 38px;
-  word-break: break-word;
-}
-
-.law-value p {
-  margin-bottom: 14px;
-}
-
-.law-value p:last-child {
-  margin-bottom: 0;
-}
-
-.law-contact-link {
-  color: #333;
-  text-decoration: underline;
-  text-underline-offset: 6px;
-}
-
-/* =========================
-   Contact Page
-========================= */
-
-.contact-main {
-  padding: 10px 0 80px;
-}
-
-.contact-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px 24px 60px;
-}
-
-.contact-lead {
-  font-size: 22px;
-  line-height: 1.9;
-  margin-bottom: 48px;
-  color: #333;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-}
-
-.form-group label {
-  font-size: 20px;
-  display: block;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.required {
-  display: inline-block;
-  background: #8f2b2b;
-  color: #fff;
-  padding: 4px 10px;
-  font-size: 14px;
-  margin-right: 8px;
-  border-radius: 6px;
-  vertical-align: middle;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 16px;
-  font-size: 18px;
-  border: none;
-  border-radius: 10px;
-  background: #f7f7f7;
-  color: #333;
-  outline: none;
-}
-
-.contact-form textarea {
-  resize: vertical;
-  min-height: 220px;
-}
-
-.half {
-  width: 40% !important;
-}
-
-.privacy-text {
-  font-size: 16px;
-  line-height: 1.8;
-  margin: 10px 0 14px;
-  color: #444;
-}
-
-.checkbox {
-  display: flex !important;
-  align-items: center;
-  gap: 10px;
-  font-size: 18px !important;
-  margin-bottom: 0 !important;
-}
-
-.checkbox input[type="checkbox"] {
-  width: 28px;
-  height: 28px;
-  margin: 0;
-  accent-color: #8f2b2b;
-  flex: 0 0 auto;
-}
-
-.form-submit {
-  margin-top: 20px;
-}
-
-.form-submit button {
-  width: 100%;
-  padding: 20px;
-  font-size: 22px;
-  background: #8f2b2b;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 0;
-}
-
-.privacy-section {
-  margin-top: 60px;
-  padding-top: 40px;
-  border-top: 1px solid #bdbdbd;
-}
-
-.privacy-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.privacy-box {
-  background: #eaeaea;
-  padding: 20px;
-  border-radius: 10px;
-  max-height: 260px;
-  overflow-y: auto;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #333;
-}
-
-.privacy-box p {
-  margin-bottom: 12px;
-}
-
-.privacy-box p:last-child {
-  margin-bottom: 0;
-}
-
-/* =========================
-   Company Page
-========================= */
-
-.company-main {
-  padding: 20px 0 80px;
-}
-
-.company-container {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-.company-section {
-  margin-bottom: 80px;
-}
-
-.company-section-line {
-  border-top: 2px solid #4a4a4a;
-  margin-bottom: 28px;
-}
-
-.company-en-title {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 110px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0.01em;
-  margin-bottom: 90px;
-  color: #2f2f2f;
-}
-
-.company-message-title {
-  font-size: 62px;
-  font-weight: 400;
-  line-height: 1.9;
-  letter-spacing: 0.02em;
-  margin-bottom: 110px;
-  color: #2f2f2f;
-}
-
-.company-message-text p {
-  font-size: 28px;
-  line-height: 2;
-  margin-bottom: 12px;
-  color: #3a3a3a;
-}
-
-.company-message-text p:last-child {
-  margin-bottom: 0;
-}
-
-.message-image {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.message-image img {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.company-profile-section .company-en-title {
-  margin-bottom: 60px;
-}
-
-.company-profile-table {
-  border-top: 2px solid #8a8a8a;
-}
-
-.company-row {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 24px;
-  padding: 54px 0;
-  border-bottom: 2px solid #8a8a8a;
-}
-
-.company-label {
-  font-size: 30px;
-  line-height: 1.8;
-  color: #3a3a3a;
-  padding-left: 70px;
-}
-
-.company-value {
-  font-size: 30px;
-  line-height: 1.9;
-  color: #3a3a3a;
-  padding-right: 20px;
-  word-break: break-word;
-}
-
-/* =========================
-   Responsive
-========================= */
-
-@media (max-width: 900px) {
-  .hero-inner,
-  .service-grid,
-  .top-links {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .company-en-title {
-    font-size: 72px;
-    margin-bottom: 56px;
-  }
-
-  .company-message-title {
-    font-size: 40px;
-    margin-bottom: 56px;
-    line-height: 1.7;
-  }
-
-  .company-message-text p {
-    font-size: 22px;
-  }
-
-  .company-row {
-    grid-template-columns: 1fr;
-    gap: 14px;
-    padding: 34px 0;
-  }
-
-  .company-label,
-  .company-value {
-    padding-left: 0;
-    padding-right: 0;
-    font-size: 24px;
-  }
-
-  .half {
-    width: 100% !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav {
-    display: none;
-    position: absolute;
-    top: 72px;
-    right: 5%;
-    width: 260px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 16px;
-  }
-
-  .nav.active {
-    display: block;
-  }
-
-  .nav ul {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .info-table th,
-  .info-table td {
-    display: block;
-    width: 100%;
-  }
-
-  .law-header-inner,
-  .law-container,
-  .contact-container,
-  .company-container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .law-title {
-    font-size: 30px;
-    margin: 20px 0 36px;
-  }
-
-  .law-label {
-    font-size: 22px;
-    padding: 30px 16px;
-    margin-bottom: 20px;
-  }
-
-  .law-value {
-    font-size: 22px;
-    line-height: 1.85;
-    padding: 0 16px;
-  }
-
-  .law-block {
-    margin-bottom: 34px;
-  }
-
-  .law-nav {
-    right: 16px;
-    width: calc(100% - 32px);
-  }
-
-  .contact-lead {
-    font-size: 18px;
-  }
-
-  .form-group label {
-    font-size: 18px;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 16px;
-  }
-
-  .privacy-section h2 {
-    font-size: 24px;
-  }
-
-  .company-main {
-    padding-top: 10px;
-  }
-
-  .company-section {
-    margin-bottom: 56px;
-  }
-
-  .company-section-line {
-    margin-bottom: 18px;
-  }
-
-  .company-en-title {
-    font-size: 56px;
-    margin-bottom: 40px;
-  }
-
-  .company-message-title {
-    font-size: 28px;
-    line-height: 1.9;
-    margin-bottom: 52px;
-  }
-
-  .company-message-text p {
-    font-size: 16px;
-    line-height: 1.9;
-    margin-bottom: 10px;
-  }
-
-  .company-profile-section .company-en-title {
-    margin-bottom: 28px;
-  }
-
-  .company-profile-table {
-    border-top-width: 1px;
-  }
-
-  .company-row {
-    padding: 28px 0;
-    border-bottom-width: 1px;
-  }
-
-  .company-label,
-  .company-value {
-    font-size: 16px;
-    line-height: 1.9;
-  }
-
-  .message-image {
-    margin-top: 28px;
-  }
-
-  .message-image img {
-    max-width: 100%;
-  }
-}
-
-/* =========================
-   Carypto Page
-========================= */
-
-.carypto-page {
-  background: #efefef;
-  color: #222;
-}
-
-.carypto-main {
-  padding: 20px 0 80px;
-}
-
-.carypto-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-.carypto-month {
-  margin-bottom: 90px;
-}
-
-.carypto-month-title {
-  font-size: 62px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 44px;
-  color: #111;
-}
-
-.carypto-slider {
-  display: flex;
-  gap: 28px;
-  overflow-x: auto;
-  padding: 8px 4px 20px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-
-.carypto-slider::-webkit-scrollbar {
-  height: 10px;
-}
-
-.carypto-slider::-webkit-scrollbar-track {
-  background: #dcdcdc;
-  border-radius: 999px;
-}
-
-.carypto-slider::-webkit-scrollbar-thumb {
-  background: #a8a8a8;
-  border-radius: 999px;
-}
-
-.carypto-card {
-  flex: 0 0 calc((100% - 28px * 4) / 5);
-  min-width: 200px;
-  text-align: center;
-  scroll-snap-align: start;
-}
-
-.carypto-card img {
-  width: 100%;
-  max-width: 220px;
-  margin: 0 auto 18px;
-}
-
-.carypto-rate {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 18px;
-  color: #111;
-}
-
-.carypto-type {
-  font-size: 28px;
-  font-weight: 700;
-  color: #111;
-  word-break: break-word;
-}
-
-@media (max-width: 1100px) {
-  .carypto-card {
-    flex: 0 0 240px;
-  }
-
-  .carypto-month-title {
-    font-size: 48px;
-  }
-}
-
-@media (max-width: 768px) {
-  .carypto-container {
-    padding: 0 16px;
-  }
-
-  .carypto-month {
-    margin-bottom: 60px;
-  }
-
-  .carypto-month-title {
-    font-size: 34px;
-    margin-bottom: 28px;
-    line-height: 1.4;
-  }
-
-  .carypto-slider {
-    gap: 18px;
-    padding-bottom: 14px;
-  }
-
-  .carypto-card {
-    flex: 0 0 220px;
-    min-width: 220px;
-  }
-
-  .carypto-card img {
-    max-width: 180px;
-    margin-bottom: 14px;
-  }
-
-  .carypto-rate {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-
-  .carypto-type {
-    font-size: 20px;
-  }
-}
-
-/* ===================== */
-/* TOPページ */
-/* ===================== */
-
+/* 画像 */
 .top-hero img {
   width: 100%;
   height: auto;
-  display: block;
 }
 
+/* セクション共通 */
 .section {
   padding: 80px 20px;
   text-align: center;
@@ -952,16 +101,13 @@ textarea {
   font-size: 18px;
 }
 
-.highlight h3,
-.results h3,
-.problems h3 {
-  color: #00cfff;
-}
-
+/* 強調 */
 .highlight h3 {
+  color: #00cfff;
   font-size: 26px;
 }
 
+/* サービス */
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -973,14 +119,20 @@ textarea {
   width: 300px;
   padding: 20px;
   border-radius: 10px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: #fff;
+  border: 1px solid #e5e5e5;
+}
+
+/* 実績 */
+.results h3 {
+  color: #00cfff;
+  margin-bottom: 20px;
 }
 
 .results-slider {
   display: flex;
-  overflow-x: auto;
   gap: 20px;
+  overflow-x: auto;
   padding: 10px;
 }
 
@@ -994,24 +146,88 @@ textarea {
   display: none;
 }
 
+/* CTA */
 .btn {
   display: inline-block;
   padding: 15px 40px;
   background: linear-gradient(90deg,#00cfff,#007bff);
   border-radius: 30px;
-  text-decoration: none;
   color: #fff;
-  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 悩み */
+.problems h3 {
+  color: #00cfff;
+  margin-bottom: 20px;
 }
 
 .problems ul {
   list-style: none;
   max-width: 600px;
   margin: auto;
-  padding: 0;
 }
 
 .problems li {
   margin: 10px 0;
   text-align: left;
+}
+
+/* =========================
+   Caryptoページ
+========================= */
+
+.carypto-page {
+  background: #efefef;
+}
+
+.carypto-main {
+  padding: 20px 0 80px;
+}
+
+.carypto-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.carypto-month-title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.carypto-slider {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+}
+
+.carypto-card {
+  min-width: 200px;
+  text-align: center;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+  .nav {
+    display: none;
+  }
+
+  .section h2 {
+    font-size: 24px;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+
+  .results-slider img {
+    width: 200px;
+  }
+
 }
