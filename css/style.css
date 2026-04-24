@@ -926,3 +926,91 @@ textarea {
     font-size: 20px;
   }
 }
+
+/* ===================== */
+/* TOPÉyÅ[ÉW */
+/* ===================== */
+
+.top-hero {
+  height: 100vh;
+  background: url("../images/top-main.jpg") center/cover no-repeat;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+}
+
+.section p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.highlight h3,
+.results h3,
+.problems h3 {
+  color: #00cfff;
+}
+
+.highlight h3 {
+  font-size: 26px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.results-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+.results-slider img {
+  width: 250px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.results-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background: linear-gradient(90deg,#00cfff,#007bff);
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.problems ul {
+  list-style: none;
+  max-width: 600px;
+  margin: auto;
+  padding: 0;
+}
+
+.problems li {
+  margin: 10px 0;
+  text-align: left;
+}
