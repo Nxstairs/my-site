@@ -1027,7 +1027,18 @@ textarea {
 
 /* ヘッダー横並び調整 */
 .law-header-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 10px 24px 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between; /* ←ここが重要 */
+}
+
+.logo {
+  flex: 0 0 auto;
+}
+
+.law-menu-toggle {
+  margin-left: auto;
 }
