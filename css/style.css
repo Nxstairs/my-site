@@ -1020,10 +1020,10 @@ textarea {
    ロゴ
 ========================= */
 
-/* ヘッダー横並び調整 */
 .law-header-inner {
-  max-width: 980px;
-  margin: 0 auto;
+  width: 100%;            /* ←追加 */
+  max-width: none;        /* ←ここが一番重要 */
+  margin: 0;              /* ←中央寄せ解除 */
   padding: 10px 24px;
   display: flex;
   align-items: center;
