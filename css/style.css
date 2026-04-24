@@ -231,3 +231,49 @@ a {
   }
 
 }
+
+/* =========================
+   スマホメニュー
+========================= */
+
+/* ハンバーガーボタン */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* スマホ表示 */
+@media (max-width: 768px) {
+
+  /* ハンバーガー表示 */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* ナビ非表示（初期） */
+  .nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    right: 5%;
+    width: 260px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+  }
+
+  /* メニュー開いたとき */
+  .nav.active {
+    display: block;
+  }
+
+  /* 縦並び */
+  .nav ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
