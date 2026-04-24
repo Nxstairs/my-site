@@ -1020,23 +1020,24 @@ textarea {
    ロゴ
 ========================= */
 
-.logo img {
-  height: 40px;
-  width: auto;
-}
-
 /* ヘッダー横並び調整 */
 .law-header-inner {
   max-width: 980px;
   margin: 0 auto;
-  padding: 10px 24px 0;
+  padding: 10px 24px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* ←ここが重要 */
+  justify-content: space-between;
 }
 
 .logo {
-  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
 }
 
 .law-menu-toggle {
