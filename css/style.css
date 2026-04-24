@@ -261,12 +261,13 @@ textarea {
 }
 
 .law-header-inner {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 10px 24px 0;
+  width: 100%;            /* ←追加 */
+  max-width: none;        /* ←ここが一番重要 */
+  margin: 0;              /* ←中央寄せ解除 */
+  padding: 10px 24px;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: space-between;
 }
 
 .law-menu-toggle {
@@ -1019,16 +1020,6 @@ textarea {
 /* =========================
    ロゴ
 ========================= */
-
-.law-header-inner {
-  width: 100%;            /* ←追加 */
-  max-width: none;        /* ←ここが一番重要 */
-  margin: 0;              /* ←中央寄せ解除 */
-  padding: 10px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .logo {
   display: flex;
