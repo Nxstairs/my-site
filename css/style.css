@@ -931,9 +931,10 @@ textarea {
 /* TOPÉyÅ[ÉW */
 /* ===================== */
 
-.top-hero {
-  height: 100vh;
-  background: url("../images/top-main.jpg") center/cover no-repeat;
+.top-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .section {
