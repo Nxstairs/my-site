@@ -19,7 +19,7 @@ setInterval(() => {
   track.style.transition = "transform 0.7s ease";
   track.style.transform = `translateX(-${index * slideWidth}px)`;
 
-  if (index >= slides.length - 7) {
+  if (index >= slides.length - 5) {
     setTimeout(() => {
       track.style.transition = "none";
       index = 0;
