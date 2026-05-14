@@ -16,11 +16,24 @@ setInterval(() => {
 
   index++;
 
-  if(index >= slides.length){
-    index = 0;
-  }
-
+  track.style.transition = "transform 0.7s ease";
   track.style.transform =
     `translateX(-${index * 100}%)`;
+
+  // ÅŒã‚ÌƒRƒs[‰æ‘œ‚É—ˆ‚½‚ç
+  if(index === slides.length - 1){
+
+    setTimeout(() => {
+
+      track.style.transition = "none";
+
+      index = 0;
+
+      track.style.transform =
+        `translateX(0%)`;
+
+    }, 700);
+
+  }
 
 }, 3000);
