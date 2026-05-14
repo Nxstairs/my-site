@@ -33,18 +33,24 @@ if (track && slides.length > 0) {
   }, 3000);
 }
 
-const slideUpItems = document.querySelectorAll(".slide-up");
+const animatedItems = document.querySelectorAll(
+  ".slide-up, .slide-left, .slide-right"
+);
 
-const slideUpObserver = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries) => {
+
   entries.forEach((entry) => {
+
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     }
+
   });
+
 }, {
   threshold: 0.3
 });
 
-slideUpItems.forEach((item) => {
-  slideUpObserver.observe(item);
+animatedItems.forEach((item) => {
+  observer.observe(item);
 });
