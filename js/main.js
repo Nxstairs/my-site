@@ -14,8 +14,14 @@ let index = 0;
 
 setInterval(() => {
 
+  const slideStyle =
+    getComputedStyle(track);
+
+  const gap =
+    parseInt(slideStyle.gap);
+
   const slideWidth =
-    slides[0].offsetWidth + 28;
+    slides[0].offsetWidth + gap;
 
   index++;
 
@@ -25,7 +31,7 @@ setInterval(() => {
   track.style.transform =
     `translateX(-${index * slideWidth}px)`;
 
-  if(index >= slides.length - 1){
+  if(index >= slides.length - 5){
 
     setTimeout(() => {
 
