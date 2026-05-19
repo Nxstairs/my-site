@@ -40,6 +40,8 @@
 <main class="contact-main">
   <div class="contact-container">
 
+    <h1 class="contact-title">お問い合わせフォーム</h1>
+
     <p class="contact-lead">
       ご質問やご相談などございましたら、下記のお問い合わせフォームよりご連絡ください。
       担当が内容を確認次第、折り返しご連絡させていただきます。
@@ -82,22 +84,6 @@
         <textarea rows="6"></textarea>
       </div>
 
-      <!-- 同意チェック（そのまま） -->
-      <div class="form-group">
-        <label><span class="required">必須</span> 個人情報保護について</label>
-        <p class="privacy-text">
-          個人情報の取り扱いについて同意いただける場合はチェックを入れてください。
-        </p>
-        <label class="checkbox">
-          <input type="checkbox" required> 同意しました
-        </label>
-      </div>
-
-      <div class="form-submit">
-        <button type="submit">送信する</button>
-      </div>
-
-      <!-- 👇ここに追加（フォーム末尾） -->
       <div class="privacy-section">
         <h2>個人情報保護について</h2>
 
@@ -110,7 +96,6 @@
           </p>
 
           <p>1．個人情報保護に関する法令及びその他の規範を遵守します。</p>
-
           <p>2．弊社は、その業務目的を遂行する為に、個人情報を使用する場合があります。</p>
 
           <p>
@@ -136,11 +121,27 @@
             合理的な範囲で速やかに対応します。
           </p>
 
-          <p style="margin-top:20px;">
-            株式会社　INFINITY<br>
+          <p>
+            株式会社 INFINITY<br>
             代表取締役 杉政 直樹
           </p>
         </div>
+      </div>
+
+      <div class="form-group privacy-check">
+        <label><span class="required">必須</span> 個人情報保護について</label>
+
+        <p class="privacy-text">
+          個人情報の取り扱いについて同意いただける場合はチェックを入れてください。
+        </p>
+
+        <label class="checkbox">
+          <input type="checkbox" required> 同意しました
+        </label>
+      </div>
+
+      <div class="form-submit">
+        <button type="submit">送信する</button>
       </div>
 
     </form>
