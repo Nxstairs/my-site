@@ -36,7 +36,7 @@ form.addEventListener("submit", function(e) {
   // 送信
 
   emailjs.sendForm(
-    "service_6oibens",
+    "service_coxno7d",
     "template_vdec08q",
     this
   )
