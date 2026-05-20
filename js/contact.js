@@ -49,12 +49,14 @@ form.addEventListener("submit", function(e) {
 
   })
 
-  .catch((error) => {
+.catch((error) => {
 
-    console.error(error);
+  console.log("EmailJS error:", error);
 
-    alert("送信に失敗しました");
-
-  });
+  alert(
+    "送信に失敗しました\n\n" +
+    "status: " + error.status + "\n" +
+    "text: " + error.text
+  );
 
 });
